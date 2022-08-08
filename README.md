@@ -3,7 +3,7 @@
 [![Version](https://img.shields.io/npm/v/react-native-svg.svg)](https://www.npmjs.com/package/react-native-svg)
 [![NPM](https://img.shields.io/npm/dm/react-native-svg.svg)](https://www.npmjs.com/package/react-native-svg)
 
-`react-native-svg` provides SVG support to React Native on iOS and Android, and a compatibility layer for the web.
+`react-native-svg` provides SVG support to React Native on iOS, Android, macOS, Windows, and a compatibility layer for the web.
 
 [Check out the demo](https://snack.expo.io/@msand/react-native-svg-example)
 
@@ -76,8 +76,13 @@ Install the JavaScript with:
 
 ##### With react-native-cli
 
-1. Install library from `npm`
+1. Install library
 
+   from npm
+   ```bash
+   npm install react-native-svg
+   ```
+   from yarn
    ```bash
    yarn add react-native-svg
    ```
@@ -191,7 +196,7 @@ and run `pod install` from `ios` folder
 
 #### Problems with Proguard
 
-When Proguard is enabled (which it is by default for Android release builds), it causes runtine error
+When Proguard is enabled (which it is by default for Android release builds), it causes runtime error.
 To avoid this, add an exception to `android/app/proguard-rules.pro`:
 
 ```bash
@@ -918,7 +923,7 @@ The <ClipPath> SVG element defines a clipping path. A clipping path is used/refe
           x="50"
           y="30"
           fontSize="32"
-          fonWeight="bold"
+          fontWeight="bold"
           textAnchor="middle"
           scale="1.2"
         >
